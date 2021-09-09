@@ -1,1 +1,13 @@
+body { display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: space-between;
+}
 
+footer { text-align: center;
+}
+
+#resultado { margin-top: 50px;
+}
