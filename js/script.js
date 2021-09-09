@@ -5,8 +5,8 @@ let peso, altura, imc, result
 let aviso = document.getElementById("resultado")
 
 function calcular() {
-    peso = document.getElementById("peso").textContent;
-    altura = document.getElementById("altura").textContent;
+    peso = document.getElementById("peso").value;
+    altura = document.getElementById("altura").value;
 
     imc = peso / (altura * altura)
     if(imc <= 18.5) {
