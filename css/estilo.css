@@ -11,6 +11,9 @@ header { width: 100vw;
     height: fit-content;
 }
 
+p { text-align: center;
+}
+
 footer { text-align: center;
     padding: 15px;
 }
@@ -18,5 +21,9 @@ footer { text-align: center;
 #campos { width: fit-content;
 }
 
-#resultado { margin-top: 50px;
+#calcular { margin-top: 50px;
+}
+
+#resultado { width: 70vw;
+    height: auto;
 }
