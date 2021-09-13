@@ -13,36 +13,49 @@
     <!--Interação-->
     <script src="js/script.js"></script>
     <!--Título-->
-    <title>IMC</title>
+    <title>Modelo</title>
 </head>
 
+<!--Conteúdo-->
 <body class="bg-dark text-white">
+    <!--Título-->
     <header>
         <h1 class="shadow-lg p-3 mb-5 bg-body rounded text-center">Cálculo de IMC</h1>
     </header>
 
+    <!--Formulário-->
     <section>
         <form>
-            <div class="row justify-content-center align-items-center" id="campos">
-                <div class="md-6 col-auto">
-                    <label class="form-label">Peso</label>
-                    <input type="number" id="peso" name="peso" class="form-control" step="0.01" required>
+            <div class="collumn justify-content-center align-items-center" id="campos">
+                <!--Campo Nome-->
+                <div class="col-auto">
+                    <label class="form-label">Nome</label>
+                    <input type="text" id="nome" name="nome" class="form-control" required>
                 </div>
-                <div class="md-6 col-auto">
+                <!--Campo Peso-->
+                <div class="col-auto">
+                    <label class="form-label">Peso</label>
+                    <input type="number" id="peso" name="peso" class="form-control" step="0.01" min="0" max="400" required>
+                </div>
+                <!--Campo Altura-->
+                <div class="col-auto">
                     <label class="form-label">Altura</label>
-                    <input type="number" id="altura" name="altura" class="form-control" step="0.01" required>    
+                    <input type="number" id="altura" name="altura" class="form-control" step="0.01" min="0" max="3" required>    
                 </div>
             </div>
+            <!--Botão Cálculo-->
             <div class="text-center">
-                <button type="button" class="btn btn-success" name="calcular" id="calcular" onclick="calcular();">Calcular</button>
+                <button type="button" class="btn btn-success" name="calcular" id="calcular">Calcular</button>
             </div>
         </form>
     </section>
     
+    <!--Resultado-->
     <p id="resultado">*Atenção, o IMC depende de muitos outros fatores, então o resultado a ser mostrado não é 100% certo!</p>
 
+    <!--Footer-->
     <footer>
-        <p>Amanda Moura © 2021</p>
+        <span>Amanda Moura © 2021</span>
     </footer>
 </body>
 </html>
