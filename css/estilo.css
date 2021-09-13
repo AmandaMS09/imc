@@ -5,13 +5,22 @@ body { display: flex;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 header { width: 100vw;
     height: fit-content;
 }
 
+section { padding: 20px 15px;
+    border-radius: 8px;
+    box-shadow: 5pt 5pt 10pt black;
+}
+
 p { text-align: center;
+}
+
+span { margin: 10px;
 }
 
 footer { text-align: center;
