@@ -1,6 +1,6 @@
 //Pegando o evento de clique do botão calcular
 const calcular = document.getElementById('calcular');
-calcular.addEventListener('click', imc);
+//calcular.addEventListener('click', imc);
 
 //Criação da função que realizará o cálculo
 function imc () {
@@ -39,3 +39,4 @@ function imc () {
     }
 
 }
+calcular.addEventListener('click', imc);
